@@ -19,6 +19,9 @@ public class CorsFilter implements Filter {
         HttpServletResponse httpResponse = (HttpServletResponse) response;
         HttpServletRequest httpRequest = (HttpServletRequest) request;
 
+        System.out.println("Request Method: " + httpRequest.getMethod());
+        System.out.println("Request URL: " + httpRequest.getRequestURL());
+
         // Permitir acceso desde cualquier origen
         httpResponse.setHeader("Access-Control-Allow-Origin", "*");
 

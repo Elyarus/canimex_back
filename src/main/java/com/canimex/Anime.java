@@ -14,8 +14,8 @@ public class Anime {
     public Anime(int idAnime, String titulo, String genero, String duracion, String imagen) {
         this.idAnime = idAnime;
         this.titulo = titulo;
-        this.duracion = duracion;
         this.genero = genero;
+        this.duracion = duracion;
         this.imagen = imagen;
     }
 
